@@ -421,15 +421,9 @@
               <input id="amount" placeholder="Ej: 15" inputmode="numeric" />
             </div>
           </div>
-
-          <div>
-            <label for="phone">Tu WhatsApp (opcional)</label>
-            <input id="phone" placeholder="Ej: 5917XXXXXXX" inputmode="numeric" />
-          </div>
-
           <div>
             <label for="note">Detalle / Plataforma (opcional)</label>
-            <textarea id="note" placeholder="Ej: Recarga para X plataforma, hoy."></textarea>
+            <textarea id="note" placeholder="Eje.¡Hola! Deseo realizar una recarga."></textarea>
           </div>
 
           <div class="check">
@@ -522,7 +516,6 @@
     let msg = `${MENSAJE_BASE}`;
     if (amount) msg += ` Quiero recargar ${amount} Bs.`;
     if (name) msg += ` Mi nombre es ${name}.`;
-    if (phone) msg += ` Mi número es ${phone}.`;
     if (note) msg += ` Detalle: ${note}`;
     return msg;
   }
