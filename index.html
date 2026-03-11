@@ -454,15 +454,7 @@
             <div class="timer">
               Habilitando en <b><span id="count">8</span>s</b>…
             </div>
-            <div class="status" id="status">
-              Completa y marca las casillas para habilitar.
-            </div>
           </div>
-
-          <div class="note">
-            ✅ Mensaje predeterminado listo. Puedes cambiarlo en el código (variable <b>MENSAJE_BASE</b>).
-          </div>
-
           <div class="footer">
             Política de privacidad • Términos • Juego responsable
           </div>
@@ -509,6 +501,7 @@
   function buildMessage(){
     const name = nameEl.value.trim();
     const amount = amountEl.value.trim();
+    const phone = cleanDigits(phoneEl.value);
     const note = noteEl.value.trim();
 
     // Mensaje predeterminado + datos opcionales
